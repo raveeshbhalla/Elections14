@@ -11,6 +11,14 @@ HTMLCleaner has been used for the scraping. I will be separately releasing, whic
 
 The app also uses a "HaptikLibrary". Within the app, there is an option for users to ask further queries from experts at Haptik. The HaptikLibrary provides the necessary deeplinking support with the Haptik app (https://play.google.com/store/apps/details?id=co.haptik). The library would not be available for a while to general users, so I'd recommend removing it for your own consumption.
 
+Screenshots
+============
+![alt tag](https://github.com/raveeshbhalla/Elections14/raw/master/screenshots/Lockscreen%20Widget.png)
+
+![alt tag](https://github.com/raveeshbhalla/Elections14/raw/master/screenshots/homescreen%20widget%20small.png)
+
+![alt tag](https://github.com/raveeshbhalla/Elections14/raw/master/screenshots/screenshot.png)
+
 Contact
 =============
 My contact information is available at http://raveesh.co. If you would like to get in touch with me on Twitter, I'm @raveeshbhalla
