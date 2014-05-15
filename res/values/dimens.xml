@@ -1,0 +1,11 @@
+<resources>
+    <dimen name="size">48dp</dimen>
+    <dimen name="half_size">24dp</dimen>
+    <dimen name="quarter_size">12dp</dimen>
+	<dimen name="progress_bar_minus_margin">-24dp</dimen>
+	<dimen name="margin">16dp</dimen>
+	<dimen name="half_margin">8dp</dimen>
+	<dimen name="textsize">16sp</dimen>
+	<dimen name="smalltextsize">12sp</dimen>
+	<item type="integer" name="rotation_time">300</item>
+</resources>

@@ -1,0 +1,265 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/margin" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin" >
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bjp" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/half_size"
+            android:background="@color/bjp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/bjp"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+
+        <ProgressBar
+            android:id="@+id/bjpScale"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_toLeftOf="@+id/countBjp"
+            android:layout_toRightOf="@+id/frame"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/bjpprogress" />
+
+        <TextView
+            android:id="@+id/countBjp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/circle"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin" >
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_centerVertical="true"
+            android:src="@drawable/upa" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/half_size"
+            android:background="@color/upa" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/upa"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+
+        <ProgressBar
+            android:id="@+id/upaScale"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_toLeftOf="@+id/countUpa"
+            android:layout_toRightOf="@+id/frame"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/upaprogress" />
+
+        <TextView
+            android:id="@+id/countUpa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/circle"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+ />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin" >
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_centerVertical="true"
+            android:src="@drawable/aap" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/half_size"
+            android:background="@color/aap" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/aap"
+            android:textColor="@color/background"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+
+        <ProgressBar
+            android:id="@+id/aapScale"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_toLeftOf="@+id/countAap"
+            android:layout_toRightOf="@+id/frame"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/aapprogress" />
+
+        <TextView
+            android:id="@+id/countAap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/circle"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/circle"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_centerVertical="true"
+            android:src="@drawable/others" />
+
+        <FrameLayout
+            android:id="@+id/frame"
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/half_size"
+            android:background="@color/others" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_marginLeft="@dimen/margin"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="@string/others"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+
+        <ProgressBar
+            android:id="@+id/othersScale"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/size"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignTop="@+id/circle"
+            android:layout_toLeftOf="@+id/countOthers"
+            android:layout_toRightOf="@+id/frame"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/othersprogress" />
+
+        <TextView
+            android:id="@+id/countOthers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/circle"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/circle"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:text="0"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Elections 14</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+	<string name="upa">Cong+</string>
+	<string name="bjp">BJP+</string>
+	<string name="aap">AAP</string>
+	<string name="others">Others</string>
+	<string name="ask_haptik">Have a specific question? Ask Haptik.</string>
+</resources>

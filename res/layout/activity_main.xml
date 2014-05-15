@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".MainActivity" >
+
+    <ImageButton
+        android:id="@+id/refresh"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_toLeftOf="@+id/share"
+        android:background="@drawable/haptik_selector"
+        android:src="@drawable/ic_action_refresh" />
+
+    <ImageButton
+        android:id="@+id/share"
+        android:layout_width="@dimen/size"
+        android:layout_height="@dimen/size"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/haptik_selector"
+        android:src="@drawable/ic_action_share" />
+
+    <include
+        android:layout_above="@+id/buttonHaptik"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/results" />
+
+    <LinearLayout
+        android:id="@+id/buttonHaptik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/haptik_selector"
+        android:clickable="true"
+        android:gravity="center"
+        android:paddingLeft="@dimen/margin"
+        android:paddingRight="@dimen/margin" >
+
+        <ImageView
+            android:layout_width="@dimen/size"
+            android:layout_height="@dimen/size"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_haptik" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:fontFamily="sans-serif-light"
+            android:text="@string/ask_haptik"
+            android:textColor="@color/text"
+            android:textSize="@dimen/textsize"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+</RelativeLayout>

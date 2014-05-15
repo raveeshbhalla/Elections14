@@ -1,0 +1,9 @@
+<resources>
+    <color name="background">#191919</color>
+    <color name="bjp">#FF6600</color>
+    <color name="upa">#009900</color>
+    <color name="aap">#ffffff</color>
+    <color name="others">#0099FF</color>
+    <color name="text">#fff</color>
+    <color name="widget_background">#99000000</color>
+</resources>
