@@ -1,6 +1,7 @@
 <resources>
     <dimen name="size">48dp</dimen>
     <dimen name="half_size">24dp</dimen>
+    <dimen name="small_frame_width">32dp</dimen>
     <dimen name="quarter_size">12dp</dimen>
 	<dimen name="progress_bar_minus_margin">-24dp</dimen>
 	<dimen name="margin">16dp</dimen>

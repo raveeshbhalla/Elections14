@@ -1,5 +1,7 @@
 package co.raveesh.elections14;
 
+import com.google.analytics.tracking.android.EasyTracker;
+
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -89,13 +91,14 @@ public class MainActivity extends Activity {
 		/*
 		 * @TODO: remove this part
 		 */
-		others.TOTAL = 543-(nda.TOTAL + upa.TOTAL + aap.TOTAL);
+		//others.TOTAL = 543-(nda.TOTAL + upa.TOTAL + aap.TOTAL);
+		
 		Constants.Log(TAG, nda.toString());
 		Constants.Log(TAG, upa.toString());
 		Constants.Log(TAG, aap.toString());
 		Constants.Log(TAG, others.toString());
 
-		int max = 500;
+		int max = 450;
 
 		ProgressBar pbNDA = (ProgressBar) findViewById(R.id.bjpScale);
 		ProgressBar pbUPA = (ProgressBar) findViewById(R.id.upaScale);
@@ -178,5 +181,17 @@ public class MainActivity extends Activity {
 			stopRefreshAnimation();
 		}
 	};
+	
+	@Override
+	  public void onStart() {
+	    super.onStart();
+	    EasyTracker.getInstance(this).activityStart(this);  // Add this method.
+	  }
+
+	  @Override
+	  public void onStop() {
+	    super.onStop();
+	    EasyTracker.getInstance(this).activityStop(this);  // Add this method.
+	  }
 
 }

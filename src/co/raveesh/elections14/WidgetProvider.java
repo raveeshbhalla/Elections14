@@ -1,10 +1,6 @@
 package co.raveesh.elections14;
 
 import java.util.Calendar;
-import java.util.Formatter;
-
-import co.raveesh.elections14.object.Party;
-import co.raveesh.elections14.object.Preferences;
 
 import android.app.AlarmManager;
 import android.app.PendingIntent;
@@ -14,6 +10,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.RemoteViews;
+import co.raveesh.elections14.object.Party;
+import co.raveesh.elections14.object.Preferences;
 
 public class WidgetProvider extends AppWidgetProvider {
 	String TAG = "WidgetProvider";
@@ -52,13 +50,10 @@ public class WidgetProvider extends AppWidgetProvider {
 	
 	@Override
 	public void onAppWidgetOptionsChanged(Context context, AppWidgetManager appWidgetManager, int appWidgetId, Bundle bundle) {
-	        int minWidth = bundle.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_WIDTH);
-	        int maxWidth = bundle.getInt(AppWidgetManager.OPTION_APPWIDGET_MAX_WIDTH);
 	        int minHeight = bundle.getInt(AppWidgetManager.OPTION_APPWIDGET_MIN_HEIGHT);
 	        int maxHeight = bundle.getInt(AppWidgetManager.OPTION_APPWIDGET_MAX_HEIGHT);
 	        RemoteViews rv = null;
 	       
-	        Constants.Log(TAG, new Formatter().format("Resized %d %d %d %d", minWidth,maxWidth,minHeight,maxHeight).toString());
 	        if (minHeight <192 && maxHeight<192){
 	        	rv = new RemoteViews(context.getPackageName(), R.layout.widget_horizontal);
 	        }
@@ -76,7 +71,8 @@ public class WidgetProvider extends AppWidgetProvider {
 		/*
 		 * @TODO: remove this part
 		 */
-		others.TOTAL = 543 - (nda.TOTAL + upa.TOTAL + aap.TOTAL);
+		//others.TOTAL = 543 - (nda.TOTAL + upa.TOTAL + aap.TOTAL);
+		
 		Constants.Log(TAG, nda.toString());
 		Constants.Log(TAG, upa.toString());
 		Constants.Log(TAG, aap.toString());

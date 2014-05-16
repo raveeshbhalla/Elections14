@@ -56,9 +56,9 @@ public class SyncDataTask extends AsyncTask<Object, Integer, Object> {
 			Party upa = new Party(Constants.UPA, 0, 0);
 			Party aap = new Party(Constants.AAP, 0, 0);
 			Party others = new Party(Constants.OTHERS, 0, 0);
-
 			Object[] info_nodes = node.evaluateXPath("//div[@id='div1']");
 			if (info_nodes.length > 0) {
+				Constants.Log(TAG, "Found div1");
 				TagNode firstNode = (TagNode) info_nodes[0];
 				Object[] states = firstNode.evaluateXPath("/table");
 
@@ -69,7 +69,7 @@ public class SyncDataTask extends AsyncTask<Object, Integer, Object> {
 				 * was being returned initially for the scraping done above,
 				 * hence the -1
 				 */
-				for (int i = 0; i < states.length - 1; i++) {
+				for (int i = 0; i < states.length; i++) {
 					State state = new State((TagNode) states[i]);
 					Constants.Log(TAG, state.toString());
 
@@ -79,13 +79,12 @@ public class SyncDataTask extends AsyncTask<Object, Integer, Object> {
 					 * which will later be stored in database
 					 */
 					for (int j = 0; j < stateParties.size(); j++) {
-						boolean found = false;
-
 						/*
 						 * Checking if state party has previously been stored in
 						 * ArrayList If it has, it's data for leading, won and
 						 * total are updated appropriately
 						 */
+						Constants.Log(TAG, stateParties.get(j).toString());
 						List<String> list = Arrays.asList(NDA);
 						int index = list.indexOf(stateParties.get(j).NAME);
 						if (index != -1) {

@@ -73,7 +73,7 @@ public class SyncService extends Service {
 		/*
 		 * @TODO: remove this part
 		 */
-		others.TOTAL = 543 - (nda.TOTAL + upa.TOTAL + aap.TOTAL);
+		//others.TOTAL = 543 - (nda.TOTAL + upa.TOTAL + aap.TOTAL);
 		Constants.Log(TAG, nda.toString());
 		Constants.Log(TAG, upa.toString());
 		Constants.Log(TAG, aap.toString());

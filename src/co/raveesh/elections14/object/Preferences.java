@@ -10,7 +10,7 @@ public class Preferences {
 	private String TAG = "Preferences";
 	
 	public Preferences(Context context){
-		prefs = context.getSharedPreferences("Elections",context.MODE_PRIVATE);
+		prefs = context.getSharedPreferences("Elections",Context.MODE_PRIVATE);
 	}
 	
 	public void storeParty(Party party){
@@ -22,8 +22,8 @@ public class Preferences {
 	}
 	
 	public Party getParty(String name){
-		int won = prefs.getInt(name+"WON",0)+Constants.getRandom();
-		int leading = prefs.getInt(name+"LEADING",0)+Constants.getRandom();
+		int won = prefs.getInt(name+"WON",0);
+		int leading = prefs.getInt(name+"LEADING",0);
 		Party party = new Party(name,won,leading);
 		Constants.Log(TAG, party.toString());
 		return party;

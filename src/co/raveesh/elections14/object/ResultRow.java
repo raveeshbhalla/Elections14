@@ -15,4 +15,9 @@ public class ResultRow {
 		this.text = text;
 		this.pb = pb;
 	}
+	
+	@Override
+	public String toString(){
+		return old.toString() + ";" + neu.toString();
+	}
 }

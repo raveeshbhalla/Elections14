@@ -4,13 +4,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.Random;
 
 import org.htmlcleaner.HtmlCleaner;
 import org.htmlcleaner.TagNode;
 
-import co.raveesh.elections14.object.SyncListener;
 import android.util.Log;
+import co.raveesh.elections14.object.SyncListener;
 
 public class Constants {
 
@@ -53,10 +52,5 @@ public class Constants {
 		if (debug || override){
 			Log.d(TAG,Message);
 		}
-	}
-	
-	public static int getRandom(){
-		Random random = new Random();
-		return random.nextInt(30);
 	}
 }

@@ -16,7 +16,9 @@ public class Party {
 		/*
 		 * @TODO: remove 2/3
 		 */
-		TOTAL = 2*(LEADING + WON)/3;
+		//TOTAL = 2*(LEADING + WON)/3;
+
+		TOTAL = LEADING+WON;
 	}
 	
 	public boolean isSameParty(Party party){
@@ -24,16 +26,20 @@ public class Party {
 	}
 	
 	public void addParty(Party party){
+		if (party.NAME.equalsIgnoreCase("Total")){
+			return;
+		}
 		this.LEADING += party.LEADING;
 		this.WON += party.WON;
 		/*
 		 * TODO: remove 2/3
 		 */
-		TOTAL = (2/3)*(LEADING + WON);
+		//TOTAL = (2/3)*(LEADING + WON);
+		TOTAL = LEADING+WON;
 	}
 	
 	@Override
 	public String toString(){
-		return new Formatter().format("Name:%s, Won:%d, Leading:%d, Total:%f",NAME,WON,LEADING,TOTAL).toString();
+		return new Formatter().format("%s %d %d %f", NAME,LEADING,WON,TOTAL).toString();
 	}
 }
